@@ -1,0 +1,132 @@
+/* overrides for the lightbox2 style. */
+.lb-outerContainer {
+	background-color: #555;
+}
+/* my styles */
+
+body {
+	background: #272727;
+	color: #fefefe;
+	font-family: "Avenir Next", Helvetica, Arial, sans-serif;
+	margin: 2em;
+}
+
+h1, h2 {
+	font-weight: bold;
+	text-align: center;
+	color: #00B8FF;
+}
+
+h2 {
+	font-style: italic;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #00B8FF;
+}
+
+/*
+.content-frame {
+	display: flex;
+}
+.description {
+	flex: 1;
+}
+
+.gallery {
+	flex: 2;
+}*/
+
+
+.description {
+	width: 50%;
+	float: right;
+}
+
+@media (max-width: 400px) {
+	.description {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	}
+}
+
+
+
+.gallery img, .gallery video {
+	vertical-align: middle;
+	border: 2px solid black;	
+	transition: all .1s ease-in-out;
+}
+
+.gallery img:hover, .gallery video:hover {
+	border: 2px solid #00B8FF;	
+	transform: scale(1.1);
+}
+
+/* I'd like a one-column reading view, but a little narrower would be better.
+ So, really, we're looking for a maximum width with automatic margins on either side. */
+p, li {
+	max-width: 80ex;
+	margin-left: auto;
+	margin-right: auto;
+}
+li {
+	margin-top: 1em;
+}
+
+
+.nav-header {
+	margin: 0;
+	height: 1.5em;
+	background-image: url("scaletta-org-logo.png");
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	text-align: right;
+	background-position: right;
+}
+.nav-header > span {
+	color: #f66;
+	font-weight: normal;
+	display: none;
+}
+
+/* For the precache support */
+div.status-bar-hidden {
+	display: none;
+}
+
+div.status-bar-active {
+	position: fixed;
+	height: 1em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+div.status-bar-label {
+	font-style: italic;
+	padding-left: 5em;
+	font-size: 0.75em;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+div.status-bar-label > span {
+	background-color: black;
+}
+
+img.status-bar-element {
+	padding: 0;	
+	margin: 0;
+	height: 100%;
+	/* Re-set the width in each individual file to be the # of images / 100 */
+	width: 1%;
+}
+
+
