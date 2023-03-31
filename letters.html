@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fun letters for the kids!</title>
+	<script type="text/javascript">
+	
+var timeoutID = 0;
+	
+function handleKeyPress (event) {
+	// chomp the event, to allow toddlers to press everything.
+	event.preventDefault();	
+	
+	if (event.altKey || event.ctrlKey || event.metaKey) {
+		return;
+	}
+
+	var letters = document.getElementById("letters");
+		
+	// Basic keyhandling
+	if (event.keyCode == event.DOM_VK_ESCAPE) {
+		// clear the letters
+		while (letters.firstChild) {
+			letters.removeChild(letters.firstChild);
+		}
+		return;
+	} else if (event.keyCode == event.DOM_VK_BACK_SPACE) {
+		if (letters.lastChild) {
+			letters.removeChild(letters.lastChild);
+		}
+		return;
+	}	
+			
+	var key = event.keyCode || event.which;  
+    	var keychar = String.fromCharCode(key);
+		
+	// remove the old one
+	commitShownKey();
+	
+	// Add the new one
+	var toAppend = document.createElement("span");
+	toAppend.className = "show";
+	toAppend.textContent = keychar;
+	
+	letters.appendChild(toAppend);
+	
+    	//	Autocommit the typed letter in 4 seconds
+	timeoutID = window.setTimeout(commitShownKey, 4000);
+}
+	
+function commitShownKey() {
+	if (timeoutID) {
+		window.clearTimeout(timeoutID);
+		timeoutID = 0;
+	}
+
+	var letters = document.getElementById("letters");
+	var toTheTop = letters.getElementsByClassName("show");
+	for (var i = 0; i < toTheTop.length; ++i) {
+		toTheTop[i].className = "";
+	}
+}
+		
+	
+	</script>
+	<style type="text/css">
+	html, body {
+	background: black;
+	color: #f66;
+	}
+	p#letters {
+	font-family: Helvetica, Arial, sans;
+	font-size: 16pt;
+	margin: 1em;
+	
+	}
+	span {
+		-moz-transition-property: font-size, display;
+		-moz-transition-duration: 1s;
+		-webkit-transition-property: font-size;
+		-webkit-transition-duration: 1s;
+		vertical-align: top;
+	}
+	
+	span.show {
+		-moz-transition-property: font-size, display;
+		-moz-transition-duration: 1s;
+		-webkit-transition-property: font-size;
+		-webkit-transition-duration: 1s;
+		font-size: 200px;
+		height: 200px;
+		width: 200px;
+		display: block;
+		position: absolute;
+		top: 50%;
+		margin-left: 50%;	
+		left: -100px;
+	}
+		
+	</style>
+	</head>
+	<body onkeypress="handleKeyPress(event);">
+	<p id="letters"></p>
+	</body>
+	</html>
