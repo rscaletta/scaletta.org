@@ -1,0 +1,111 @@
+.twit-list, .twit-list-detail {
+	border: solid thin #aaa;
+	width: 598px;
+	margin: 0 auto 0 auto;
+	background: #1a1a1a;
+}
+
+.twit {
+	padding: 0 20px 32px 72px;
+	border-top: solid thin #aaa;
+	position: relative;
+}
+
+
+.reply {
+	border-top: none;
+}
+
+.full-name {
+	font-weight: bold;
+}
+.handle, .date, .twit-meta {
+	font-size: 0.9em;
+	color: gray;
+}
+.twit-meta a {
+	color: gray; 
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+img.twit-avatar {
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	width: 48px;
+	height: 48px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+
+.twit-image {
+	max-width: 492px;
+	border-radius: 20px;
+	padding-left: auto;
+	padding-right: auto;
+}
+
+/* for the detail view */
+
+.nav-sub-header {
+	margin: 0;
+	height: 1.5em;
+	text-align: left;
+}
+
+.twit-list-detail > .twit p {
+	font-size: 1.2em;
+	clear: left;
+}
+
+/* we want the meta to be below the name.  Let's try float/clear nonsense */
+.twit-list-detail > .twit .full-name {
+	float: left;
+}
+
+.twit-list-detail > .twit .twit-meta {
+	float: left;
+	clear: left;
+	margin-bottom: 1em;
+}
+
+/* This will basically cover when the window is narrower than the fixed-width
+ twit list + margin of 32px on each side. Would be cleaner not to have a
+  fixed-width twit list, but I didn't design the prototype on which this is
+  based ... */
+
+@media (max-width: 662px) {
+	body {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+	.twit-list {
+		width: auto;
+	}
+
+	.twit-image {
+		max-width: 200px;
+	}
+
+}
+
+
+/* Doesn't look good. 
+	.twit:first-child {
+	}
+	.twit:first-child .full-name {
+		display: block;
+	}
+	.twit:first-child p {
+		font-size: 1.5em;
+	}
+	
+	.twit:first-child .full-name, 
+	.twit:first-child .handle, 
+	.twit:first-child .date, 
+	.twit:first-child .twit-meta {
+		font-size: 0.8em;
+	}
+	*/
