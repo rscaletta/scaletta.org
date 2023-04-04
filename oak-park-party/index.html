@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Selections from a Party - scaletta.org</title>
+	<link rel="stylesheet" href="../lightbox/css/lightbox.css">
+	<link rel="icon" type="image/png" href="../scaletta-org-icon.png">
+	<link rel="stylesheet" href="../gallery.css">
+<!-- Precache the full-size images in the gallery -->
+	<script type="text/javascript">
+	
+	var galleryLinks = null;
+	var precacheStatusBar = null;
+	
+	// We want to do this asynchronously with callbacks from the onload function
+	// so that the browser can refresh/render DOM updates.
+	// If you try it in a normal loop, you'll never see the images added.
+	function loadOneImage() {
+		if (galleryLinks.length > 0) {
+			var imgSrc = galleryLinks.shift();
+			var img = new Image();
+			img.className = "status-bar-element";
+			img.onload = loadOneImage;
+			img.src = imgSrc;
+			precacheStatusBar.appendChild(img);
+		} else {
+			precacheStatusBar.className = "status-bar-hidden";
+		}
+	}
+	
+	// This function prepares for a bunch of callbacks 
+	function asyncPreloadImages() {
+		precacheStatusBar = document.getElementById("precache-status-bar");
+		precacheStatusBar.className = "status-bar-active";
+		// returns a NodeList
+		var g = document.querySelectorAll("a[data-lightbox=\"gallery\"]");
+		galleryLinks = Array.from(g);
+		loadOneImage();
+	}
+	
+		
+	</script>
+	<style type="text/css">
+	img.status-bar-element {
+		/* Set the width = # images / 100% */
+		width: 1.61%;
+	}
+	</style>
+</head>
+<body onload="asyncPreloadImages();">
+<a href="/"><div class="nav-header">
+<span>scaletta.org<span>
+</div></a>
+<h1>Party Highlights</h1>
+<h2>Straight outta Oak Park</h2>
+<div class="content-frame">
+		<!-- Description here. 
+	<div class="description">
+		<p>Congratulations to the happy couple!
+
+	</div>
+-->
+	<div class="gallery">
+		<!-- List of anchor tags and images for the gallery here. -->
+<a href="images/DSC_0102.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0102.JPG" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0103.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0103.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0106.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0106.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0117.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0117.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0118.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0118.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0122.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0122.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0129.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0129.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0130.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0130.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0133.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0133.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0135.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0135.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0141.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0141.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0142.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0142.JPG" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0145.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0145.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9633.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9633.jpeg" height="170" width="128" alt="Thumbnail image"></a>
+<a href="images/IMG_9634.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9634.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9635.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9635.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0155.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0155.JPG" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9637.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9637.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0156.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0156.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0157.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0157.JPG" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0162.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0162.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0164.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0164.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0170.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0170.JPG" width="251" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9643.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9643.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0171.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0171.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0186.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0186.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0187.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0187.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0189.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0189.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0196.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0196.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0197.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0197.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0204.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0204.JPG" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0205.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0205.JPG" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9648.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9648.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9649.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9649.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0222.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0222.JPG" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0224.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0224.JPG" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0226.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0226.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0232.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0232.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0233.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0233.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0234.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0234.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0235.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0235.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0237.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0237.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0242.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0242.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0247.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0247.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0255.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0255.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0257.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0257.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/DSC_0264.JPG" data-lightbox="gallery" data-title="Nikon D5600 | Nikkor AF-S DX 35 mm <i>f</i>1.8G"><img class="thumb" src="thumbs/DSC_0264.JPG" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9655.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9655.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9658.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9658.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9660.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9660.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9664.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9664.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9668.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9668.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9685.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9685.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9688.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9688.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9693.MOV"><video src="images/IMG_9693.MOV" type="video/mp4"  height="170"></video></a>
+<a href="images/IMG_9699.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9699.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9704.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9704.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9713.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9713.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9717.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9717.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9722.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9722.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9725.jpeg" data-lightbox="gallery" data-title="Apple iPhone 12 | Wide Camera -- 26 mm <i>f</i>1.6"><img class="thumb" src="thumbs/IMG_9725.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/IMG_9727.MOV"><video src="images/IMG_9727.MOV" type="video/mp4"  height="170"></video></a>
+	</div>
+
+</div>
+	<!-- Will be filled dynamically -->
+	<div id="precache-status-bar" class="status-bar-hidden">
+		<div class="status-bar-label"><span>Preloading full-sized images...</span></div>
+	</div>
+  <script src="../lightbox/js/lightbox-plus-jquery.js"></script>
+
+  <script type="text/javascript">
+  	lightbox.option({'fadeDuration':100, 'resizeDuration':200})
+  </script>
+</body>
+</html>
