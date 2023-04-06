@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Smoky Mountains 2022 - scaletta.org</title>
+	<link rel="stylesheet" href="../lightbox/css/lightbox.css">
+	<link rel="icon" type="image/png" href="../scaletta-org-icon.png">
+	<link rel="stylesheet" href="../gallery.css">
+	<!-- Precache the full-size images in the gallery -->
+	<script type="text/javascript">
+	
+	var galleryLinks = null;
+	var precacheStatusBar = null;
+	
+	// It's a better user experience to load one image at a time (maybe 2, tops) 
+	// We want to do this asynchronously with callbacks from the onload function
+	// so that the browser can refresh/render DOM updates.
+	// If you try it in a normal loop, you'll never see the images added.
+	function loadOneImage() {
+		if (galleryLinks.length > 0) {
+			var imgSrc = galleryLinks.shift();
+			var img = new Image();
+			img.className = "status-bar-element";
+			img.onload = loadOneImage;
+			img.src = imgSrc;
+			precacheStatusBar.appendChild(img);
+		} else {
+			precacheStatusBar.className = "status-bar-hidden";
+		}
+	}
+	
+	// This function prepares for a bunch of callbacks 
+	function asyncPreloadImages() {
+		precacheStatusBar = document.getElementById("precache-status-bar");
+		precacheStatusBar.className = "status-bar-active";
+		// returns a NodeList
+		var g = document.querySelectorAll("a[data-lightbox=\"gallery\"]");
+		galleryLinks = Array.from(g);
+		loadOneImage();
+	}
+	
+		
+	</script>
+	<style type="text/css">
+	img.status-bar-element {
+		/* Set the width = # images / 100% */
+		width: 1.75%;
+	}
+	</style>
+</head>
+<body onload="asyncPreloadImages();">
+<a href="/"><div class="nav-header">
+<span>scaletta.org<span>
+</div></a>
+<h1>Smoky Mountains 2022</h1>
+<h2>Back in the mountains!</h2>
+<div class="content-frame">
+
+	<div class="description">
+		<!-- Description here. -->
+		<p>We made it back out to the Smokies again for fall break this year (2022).  As we have all now been fully vaccinated and (bivalent) boosted, we stayed a little closer to town this time.  The trip was short but lots of fun!
+		<p>Highlights include hiking to the top of Clingman's Dome twice!  The first time we hiked straight into cloud!  We did another hike around the top of the mountain for a couple of hours until the weather cleared, and then made our way back up to the top via the Appalachian trail.  The hike was worth it!
+		<p>Speaking of "worth it," the next day we did one long hike up to the Alum Cave bluff.  This was a new trail for us, and definitely worth it.  You started in a southern forest with thick magnolia, and over a few miles and a few thousand feet of elevation traverse through eastern hardwood forests into balsam fir.  Awesome!
+
+	</div>
+
+	<div class="gallery">
+		<!-- List of anchor tags and images for the gallery here. -->
+<a href="images/smoky_mountains_2022-1.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-1.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-2.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-2.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-3.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-3.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-4.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-4.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-5.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-5.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-6.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-6.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-7.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 1.54mm f/2.4"><img class="thumb" src="thumbs/smoky_mountains_2022-7.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-8.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-8.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-9.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-9.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-10.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-10.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-11.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-11.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-12.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-12.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-13.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-13.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-14.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-14.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-15.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-15.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-16.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-16.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-17.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-17.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-18.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-18.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-19.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-19.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-20.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-20.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-21.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-21.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-22.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-22.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-23.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-23.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-24.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-24.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-25.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-25.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-26.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-26.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-27.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-27.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-28.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-28.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-29.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-29.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-30.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-30.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-31.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-31.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-32.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-32.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-33.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-33.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-34.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-34.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-35.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-35.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-36.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-36.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-37.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-37.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-38.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-38.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-39.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-39.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-40.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-40.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-41.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-41.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-42.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-42.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-43.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-43.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-44.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-44.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-45.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-45.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-46.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-46.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-47.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-47.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-48.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-48.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-49.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-49.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-50.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-50.jpeg" width="113" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-51.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-51.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-52.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-52.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-53.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/smoky_mountains_2022-53.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-54.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-54.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-55.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-55.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-56.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-56.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/smoky_mountains_2022-57.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/smoky_mountains_2022-57.jpeg" width="128" height="170" alt="Thumbnail image"></a>
+
+	</div>
+
+</div>
+	<!-- Will be filled dynamically -->
+	<div id="precache-status-bar" class="status-bar-hidden">
+		<div class="status-bar-label"><span>Preloading full-sized images...</span></div>
+	</div>
+  <script src="../lightbox/js/lightbox-plus-jquery.js"></script>
+
+  <script type="text/javascript">
+  	lightbox.option({'fadeDuration':100, 'resizeDuration':200})
+  </script>
+</body>
+</html>
