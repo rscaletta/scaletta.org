@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Chicago Auto Show 2024</title>
+	<link rel="stylesheet" href="../lightbox/css/lightbox.css">
+	<link rel="icon" type="image/png" href="../scaletta-org-icon.png">
+	<link rel="stylesheet" href="../gallery.css">
+	<!-- Precache the full-size images in the gallery -->
+	<script type="text/javascript">
+	
+	var galleryLinks = null;
+	var precacheStatusBar = null;
+	
+	// It's a better user experience to load one image at a time (maybe 2, tops) 
+	// We want to do this asynchronously with callbacks from the onload function
+	// so that the browser can refresh/render DOM updates.
+	// If you try it in a normal loop, you'll never see the images added.
+	function loadOneImage() {
+		if (galleryLinks.length > 0) {
+			var imgSrc = galleryLinks.shift();
+			var img = new Image();
+			img.className = "status-bar-element";
+			img.onload = loadOneImage;
+			img.src = imgSrc;
+			precacheStatusBar.appendChild(img);
+		} else {
+			precacheStatusBar.className = "status-bar-hidden";
+		}
+	}
+	
+	// This function prepares for a bunch of callbacks 
+	function asyncPreloadImages() {
+		precacheStatusBar = document.getElementById("precache-status-bar");
+		precacheStatusBar.className = "status-bar-active";
+		// returns a NodeList
+		var g = document.querySelectorAll("a[data-lightbox=\"gallery\"]");
+		galleryLinks = Array.from(g);
+		loadOneImage();
+	}
+	</script>
+	<style type="text/css">
+	img.status-bar-element {
+		/* Set the width = # images / 100% */
+		width: 2%;
+	}
+	</style>
+</head>
+<body onload="asyncPreloadImages();">
+<a href="/"><div class="nav-header">
+<span>scaletta.org<span>
+</div></a>
+<h1>Chicago Auto Show 2024</h1>
+<h2>Lots of cars, lots of pointing</h2>
+<div class="content-frame">
+
+	<div class="description">
+		<!-- Description here. -->
+		<p>Quick trip to the 2024 Chicago Auto Show!  Just some random shots here, really.
+
+	</div>
+
+	<div class="gallery">
+		<!-- List of anchor tags and images for the gallery here. -->
+<a href="images/auto_show_2024_01.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_01.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_02.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_02.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_03.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/auto_show_2024_03.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_04.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_04.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_05.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/auto_show_2024_05.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_06.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_06.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_07.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_07.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_08.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/auto_show_2024_08.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_09.jpeg" data-lightbox="gallery" data-title="iPhone 13 mini | iPhone 13 mini back dual wide camera 5.1mm f/1.6"><img class="thumb" src="thumbs/auto_show_2024_09.jpeg" width="227" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_10.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_10.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_11.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_11.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_12.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_12.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_13.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_13.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_14.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_14.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_15.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_15.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_16.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_16.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_17.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_17.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_18.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_18.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_19.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_19.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_20.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_20.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_21.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_21.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_22.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_22.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_23.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_23.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_24.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_24.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_25.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_25.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_26.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_26.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_27.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_27.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_28.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_28.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_29.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_29.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_30.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_30.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_31.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_31.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_32.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_32.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_33.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_33.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_34.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_34.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_35.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_35.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_36.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_36.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+<a href="images/auto_show_2024_37.jpeg" data-lightbox="gallery" data-title="NIKON D5600 | 18.0-55.0 mm f/3.5-5.6"><img class="thumb" src="thumbs/auto_show_2024_37.jpeg" width="255" height="170" alt="Thumbnail image"></a>
+	</div>
+
+</div>
+	<!-- Will be filled dynamically -->
+	<div id="precache-status-bar" class="status-bar-hidden">
+		<div class="status-bar-label"><span>Preloading full-sized images...</span></div>
+	</div>
+	
+  <script src="../lightbox/js/lightbox-plus-jquery.js"></script>
+
+  <script type="text/javascript">
+  	lightbox.option({'fadeDuration':100, 'resizeDuration':200})
+  </script>
+</body>
+</html>
